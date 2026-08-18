@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juntos Contra o Bullying | Respeito e Conscientização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar" role="region" aria-label="Controles de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Controles de Acessibilidade:</span>
+            <div class="accessibility-buttons">
+                <button id="btn-increase-font" aria-label="Aumentar tamanho do texto">A+</button>
+                <button id="btn-decrease-font" aria-label="Diminuir tamanho do texto">A-</button>
+                <button id="btn-toggle-contrast" aria-label="Alternar Modo de Alto Contraste">
+                    <span aria-hidden="true">◐</span> Alto Contraste
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="Página inicial - Juntos Contra o Bullying">
+                <span>NãoAoBullying</span>
+            </a>
+            <nav aria-label="Navegação Principal">
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#tipos">Tipos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
+                    <li><a href="#ajuda" class="btn-primary">Pedir Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Seção Hero -->
+        <section class="hero reveal">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Respeito se aprende na prática.</h1>
+                    <p>O bullying não é brincadeira inofensiva ou "coisa da idade". É uma forma de violência que deixa marcas profundas. Construa conosco um ambiente seguro para todos.</p>
+                    <div class="hero-actions">
+                        <a href="#ajuda" class="btn-primary">Preciso de Ajuda</a>
+                        <a href="#sobre" class="btn-secondary">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">O que é Bullying?</h2>
+                <div class="about-grid">
+                    <article class="about-card">
+                        <h3>Intencionalidade</h3>
+                        <p>Ações repetitivas e intencionais de agressão verbal, física ou psicológica contra a mesma pessoa.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Desequilíbrio de Poder</h3>
+                        <p>Relação desigual em que a vítima sente dificuldade ou incapacidade de se defender sozinha.</p>
+                    </article>
+                    <article class="about-card">
+                        <h3>Impacto Duradouro</h3>
+                        <p>Pode afetar a autoestima, o rendimento escolar e a saúde mental por muitos anos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Tipos de Bullying (Renderizado dinamicamente via JS) -->
+        <section id="tipos" class="section bg-alt reveal">
+            <div class="container">
+                <h2 class="section-title">Formas Mais Comuns</h2>
+                <p class="section-subtitle">O bullying pode se manifestar de diversas maneiras. Fique atento aos sinais:</p>
+                <div id="cards-container" class="cards-grid">
+                    <!-- Conteúdo inserido dinamicamente pelo script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Carrossel de Depoimentos (Renderizado dinamicamente via JS) -->
+        <section id="depoimentos" class="section reveal">
+            <div class="container">
+                <h2 class="section-title">Vozes de Conscientização</h2>
+                <div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Depoimentos e relatos">
+                    <div id="carousel-track" class="carousel-track">
+                        <!-- Itens do carrossel inseridos via JS -->
+                    </div>
+                    <div class="carousel-controls">
+                        <button id="carousel-prev" aria-label="Depoimento Anterior">&larr;</button>
+                        <div id="carousel-dots" class="carousel-dots"></div>
+                        <button id="carousel-next" aria-label="Próximo Depoimento">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção FAQ / Acordeão -->
+        <section id="faq" class="section bg-alt reveal">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <div id="faq-container" class="faq-accordion">
+                    <!-- Acordeão renderizado via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Ajuda / Contato -->
+        <section id="ajuda" class="section help-section reveal">
+            <div class="container text-center">
+                <h2>Você não está sozinho. Precisa de apoio?</h2>
+                <p>Se você ou alguém que você conhece está sofrendo bullying, procure ajuda imediatamente.</p>
+                <div class="help-cards">
+                    <div class="help-card">
+                        <h3>Disque 100</h3>
+                        <p>Direitos Humanos. Ligação gratuita e anônima.</p>
+                    </div>
+                    <div class="help-card">
+                        <h3>CVV - 188</h3>
+                        <p>Centro de Valorização da Vida. Apoio emocional 24h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Juntos Contra o Bullying. Projeto educacional e de conscientização.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
